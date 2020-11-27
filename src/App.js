@@ -11,6 +11,7 @@ import FooterComponent from './components/FooterComponent';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
 import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
 import ViewEmployeeComponent from './components/ViewEmployeeComponent';
+import 'react-app-polyfill/stable';
 
 function App() {
   return ( 
