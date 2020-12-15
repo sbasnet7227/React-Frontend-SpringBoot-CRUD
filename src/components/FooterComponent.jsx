@@ -11,7 +11,7 @@ export default class FooterComponent extends Component {
         <footer className="footer">
           <span className="text-muted">
             {" "}
-            All Right Reserved 2020 @JavaGuide
+            All Right Reserved 2020 @ Basnet and Co.
           </span>
         </footer>
       </div>
