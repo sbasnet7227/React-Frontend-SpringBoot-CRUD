@@ -4,7 +4,11 @@ class HeaderComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    
   }
+
+  
   render() {
     return (
       <div>
@@ -15,6 +19,7 @@ class HeaderComponent extends Component {
                 Employee Management App{" "}
               </a>
             </div>
+            
           </nav>
         </header>
       </div>

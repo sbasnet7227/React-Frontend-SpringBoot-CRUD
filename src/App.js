@@ -9,9 +9,10 @@ import ListEmployeeComponent from './components/ListEmployeeComponent'
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
-import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
+ import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
 import ViewEmployeeComponent from './components/ViewEmployeeComponent';
 import 'react-app-polyfill/stable';
+import HomeComponent from './components/HomeComponent';
 
 function App() {
   return ( 
@@ -21,7 +22,7 @@ function App() {
         <HeaderComponent />
           <div className = "container" >
             <Switch >
-                <Route path = "/" exact component = {ListEmployeeComponent}></Route> 
+                <Route path = "/" exact component = {HomeComponent}></Route> 
                  <Route path = "/employees"component = {ListEmployeeComponent}></Route> 
 
                  {/*   step  1 */}

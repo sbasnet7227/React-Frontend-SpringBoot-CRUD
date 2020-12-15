@@ -10,6 +10,7 @@ class ListEmployeeComponent extends Component {
     this.addEmployee = this.addEmployee.bind(this);
     this.editEmployee = this.editEmployee.bind(this);
     this.deleteEmployee = this.deleteEmployee.bind(this);
+    this.backToHome = this.backToHome.bind(this);
 
   }
   componentDidMount() {
@@ -36,12 +37,17 @@ class ListEmployeeComponent extends Component {
    viewEmployee(id){
      this.props.history.push(`/view-employee/${id}`)
    }
+   backToHome(){
+     this.props.history.push("/");
+   }
   render() {
     return (
       <div>
         <h2 className="text-center">Employee List</h2>
+
         <div className="row">
           <button className="btn btn-primary" onClick={this.addEmployee}>Add Employee</button>
+          <button style= {{marginLeft: "20px"}} className="btn btn-info" onClick={this.backToHome}>Back To Home</button>
 
         </div>
         <div style={{marginTop:'15px'}} className="row">

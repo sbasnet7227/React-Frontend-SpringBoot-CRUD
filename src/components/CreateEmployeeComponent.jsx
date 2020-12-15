@@ -40,7 +40,7 @@ export default class CreateEmployeeComponent extends Component {
     }
 
 
-    saveOrUpdateEmployee = (e) => {
+    saveOrUpdateEmployee = (e) => { 
         e.preventDefault(); 
         let employee = {firstName: this.state.firstName, lastName: this.state.lastName,emailId: this.state.emailId};
         console.log('employee =>' + JSON.stringify(employee));
